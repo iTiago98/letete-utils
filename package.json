@@ -1,0 +1,12 @@
+{
+  "name": "com.letete.utils",
+  "version": "1.0.0",
+  "displayName": "Letete Utils",
+  "description": "Useful methods and class extensions made in Letete",
+  "unity": "2018.1",
+  "author": {
+    "name": "Letete",
+    "url": "https://itiago98.itch.io/"
+  },
+  "type": "library"
+}
