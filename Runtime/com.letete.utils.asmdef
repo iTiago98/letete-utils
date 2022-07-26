@@ -1,5 +1,5 @@
 {
-    "name": "letete.utils.runtime",
+    "name": "com.letete.utils",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
