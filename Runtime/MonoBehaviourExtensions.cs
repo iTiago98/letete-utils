@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace Letete.Utils
+namespace Letete.Utils.Runtime
 {
 	public static class MonoBehaviourExtensions
 	{
@@ -9,7 +9,10 @@ namespace Letete.Utils
 		
 		public static void Invoke(this MonoBehaviour mb, float waitSeconds, InvokeCallback callback)
 		{
-			mb.StartCoroutine(InvokeCoroutine(waitSeconds, callback));
+			if(mb.gameObject.activeInHierarchy)
+            {
+				mb.StartCoroutine(InvokeCoroutine(waitSeconds, callback));
+            }
 		}
 
 		private static IEnumerator InvokeCoroutine(float waitSeconds, InvokeCallback callback)
