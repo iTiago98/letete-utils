@@ -1,6 +1,6 @@
 {
   "name": "com.letete.utils",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "displayName": "Letete Utils",
   "description": "Useful methods and class extensions made in Letete",
   "unity": "2018.1",
@@ -9,4 +9,7 @@
     "url": "https://itiago98.itch.io/"
   },
   "type": "library"
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6"
+  }
 }
